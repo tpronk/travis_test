@@ -16,9 +16,26 @@
     "start": "npm run build",
     "test": "npm run lint"
   },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "modules": false,
+          "targets": {
+            "ie": 11
+          },
+          "spec": true,
+          "forceAllTransforms": true,
+          "debug": true
+        }
+      ]
+    ]
+  },
   "devDependencies": {
     "jsdoc": "^3.6.3",
-    "jshint": "^2.11.1"
+    "jshint": "^2.11.1",
+    "rollup": "^2.22.1"
   },
   "jshintConfig": {
     "esversion": 8
