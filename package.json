@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "rollup": "rollup",
+    "jshint": "jshint"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "glob": "^7.1.6",
+    "jshint": "^2.12.0",
+    "rollup": "^2.23.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-cleanup": "^3.1.1",
+    "rollup-plugin-multi-entry": "^2.1.0"
+  }
+}
