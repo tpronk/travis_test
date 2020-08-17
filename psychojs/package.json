@@ -7,14 +7,16 @@
   "author": {
     "name": "Alain Pitiot"
   },
-  "main": "js/core/PsychoJS.js",
+  "type": "module",
+  "main": "index.js",
   "scripts": {
-    "build": "npm run build:docs",
+    "build": "npm run build:js",
     "build:docs": "jsdoc js -r -d docs",
+    "prebuild:js": "rm -rf dist/*",
+    "build:js": "rollup -c",
     "lint": "npm run lint:js",
     "lint:js": "jshint js",
-    "start": "npm run build",
-    "test": "npm run lint"
+    "start": "npm run build"
   },
   "babel": {
     "presets": [
@@ -32,10 +34,12 @@
       ]
     ]
   },
+  "dependencies": {},
   "devDependencies": {
     "jsdoc": "^3.6.3",
     "jshint": "^2.11.1",
-    "rollup": "^2.22.1"
+    "rollup": "^2.22.1",
+    "terser": "^5.0.0"
   },
   "jshintConfig": {
     "esversion": 8
