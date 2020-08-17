@@ -16,7 +16,8 @@
     "build:js": "rollup -c",
     "lint": "npm run lint:js",
     "lint:js": "jshint js",
-    "start": "npm run build"
+    "start": "npm run build",
+    "test": "node test.cjs"
   },
   "babel": {
     "presets": [
