@@ -1,4 +1,3 @@
-/** @module data */
 /**
  * Trial Handler
  *
