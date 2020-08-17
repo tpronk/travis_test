@@ -5,7 +5,7 @@ COPYRIGHT_YEAR=`date +%Y`
 echo "\npackaging version ${VERSION}, year ${COPYRIGHT_YEAR}"
 
 # base directory:
-DIR=/home/apitiot/Projects/Pavlovia/PsychoJS
+DIR=$PWD
 
 
 # (*) jshint the library
@@ -34,7 +34,7 @@ if [ $npmResult != 0 ]
 then
 	exit
 fi
- 
+
 echo "\n\t- concatenating the namespaces and adding runtime.js..."
 # note: the concatenation order is VERY IMPORTANT since we must respect the dependency tree
 cat ${RDIR}/util.js ${RDIR}/data.js ${RDIR}/core.js ${RDIR}/visual.js ${RDIR}/sound.js > ${RDIR}/psychojs-${VERSION}.js
