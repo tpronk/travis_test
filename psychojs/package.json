@@ -37,6 +37,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "jasmine": "^3.6.1",
     "jsdoc": "^3.6.3",
     "jshint": "^2.11.1",
     "rollup": "^2.22.1",
